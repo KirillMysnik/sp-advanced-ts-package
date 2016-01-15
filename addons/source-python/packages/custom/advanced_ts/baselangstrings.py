@@ -12,7 +12,6 @@ class BaseLangStrings(LangStrings):
     This is a LangStrings class but after initialization replaces
     all TranslationStrings values with instances of the given
     dict-inherited base class.
-    Also provides .tokenize method.
     """
     def __init__(self, infile, encoding='utf_8', base=RecursiveTS):
         super().__init__(infile, encoding)
